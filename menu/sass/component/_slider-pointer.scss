@@ -1,0 +1,10 @@
+.favorite-coffee-pointer {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: $border-light;
+}
+
+.coffee-pointer-active {
+  background-color: $border-dark;
+}

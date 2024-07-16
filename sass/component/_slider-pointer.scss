@@ -1,0 +1,14 @@
+.favorite-coffee-pointer {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: $border-light;
+  transition: all 0.1s;
+}
+
+.coffee-pointer-progress {
+  width: 0;
+  height: 100%;
+  background-color: $border-dark;
+  transition: all 0.1s;
+}

@@ -1,0 +1,34 @@
+button {
+  width: 200px;
+  height: 64px;
+  border-radius: 100px;
+  text-align: center;
+  @extend %txt-link-button;
+  background-color: $bg-body;
+  border: none;
+  color: $text-dark;
+}
+
+.arrow-button {
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: 1px solid #665f55;
+  background-image: url("../assets/img/svg/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 1s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (hover: hover) {
+  .arrow-button:hover {
+    background-image: url("../assets/img/svg/arrow-right-light.svg");
+    background-color: #665f55;
+  }
+}
+
+.choose__arrow-left {
+  rotate: 180deg;
+}

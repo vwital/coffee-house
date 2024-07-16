@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  @media (max-width: 768px) {
+    overflow-x: hidden;
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $bg-body;
+  @extend %txt-medium;
+}
+
+a {
+  text-decoration: none;
+  scroll-behavior: smooth;
+  color: $text-dark;
+}
+
+a:visited {
+  color: $text-dark;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.coffee-house {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: $desktop-wrapper;
+  margin: 0 40px;
+  @media (max-width: 650px) {
+    margin: 0 16px;
+    transition: all 1s;
+  }
+}
+
+h1 {
+  @extend %heading-1;
+  margin: 0;
+  @media (max-width: 650px) {
+    font-size: 42px;
+    line-height: 48.3px;
+    transition: all 1s;
+  }
+}
+
+h2 {
+  @extend %heading-2;
+  margin: 0;
+  @media (max-width: 650px) {
+    font-size: 32px;
+    line-height: 40px;
+    transition: all 1s;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.text-accent {
+  color: $text-accent;
+  @extend %heading-1_accent;
+}

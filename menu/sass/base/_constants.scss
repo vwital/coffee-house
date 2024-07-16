@@ -1,0 +1,94 @@
+$desktop-width: 1440px;
+$tablet-width: 1440px;
+$mobile-width: 1440px;
+
+$desktop-wrapper: 1360px;
+$tablet-wrapper: 688px;
+$mobile-wrapper: 348px;
+
+// Colors
+$text-dark: #403f3d;
+$text-light: #e1d4c9;
+$text-accent: #b0907a;
+
+$bg-body: #e1d4c9;
+$bg-container: #665f55;
+$bg-backdrop: #403f3dcc;
+
+$border-light: #c1b6ad;
+$border-dark: #665f55;
+
+// Typography
+%heading-1 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 75px;
+  color: $text-dark;
+}
+
+%heading-1_accent {
+  font-style: italic;
+}
+
+%heading-2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: $text-dark;
+}
+
+%heading-2_accent {
+  font-style: italic;
+}
+
+%heading-3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+%txt-medium {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: $text-dark;
+}
+
+%txt-caption {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+%txt-link-button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+%txt-burger-link {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+// Typography [Mobile]
+
+%m-heading-1 {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 115%;
+}
+
+%m-heading-1_accent {
+  font-style: italic;
+}
+
+%m-heading-2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+%m-heading-2_accent {
+  font-style: italic;
+}

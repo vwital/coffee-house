@@ -1,0 +1,184 @@
+.footer {
+  padding-top: 100px;
+  padding-bottom: 40px;
+  @media (max-width: 900px) {
+    padding-top: 100px;
+  }
+}
+
+.footer-content {
+  background: $bg-backdrop;
+  border-radius: 40px;
+  display: flex;
+  padding: 100px;
+  padding-bottom: 94px;
+  gap: 100px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    padding: 100px 60px 84px 60px;
+    gap: 65px;
+  }
+  @media (max-width: 500px) {
+    padding: 60px 16px 42px 16px;
+    gap: 0;
+  }
+}
+
+.footer-header {
+  color: $text-light;
+  max-width: 530px;
+  font-size: 60px;
+  line-height: 75px;
+  @media (max-width: 650px) {
+    font-size: 32px;
+    line-height: 40px;
+    transition: all 1s;
+  }
+}
+
+.social-medias {
+  padding-top: 40px;
+}
+
+.social-media-ico {
+  padding-right: 7px;
+  cursor: pointer;
+  transition: all 1s;
+  @media (max-width: 768px) {
+    cursor: default;
+  }
+}
+
+.twitter-ico {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../../assets/img/svg/twitter-ico.svg") no-repeat;
+  transition: all 1s;
+}
+
+@media (hover: hover) {
+  .twitter-ico:hover {
+    background: url("../../assets/img/svg/twitter-ico-light.svg") no-repeat;
+  }
+}
+
+.insta-ico {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../../assets/img/svg/insta-ico.svg") no-repeat;
+}
+
+@media (hover: hover) {
+  .insta-ico:hover {
+    background: url("../../assets/img/svg/insta-ico-light.svg") no-repeat;
+  }
+}
+
+.facebook-ico {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url("../../assets/img/svg/facebook-ico.svg") no-repeat;
+}
+
+@media (hover: hover) {
+  .facebook-ico:hover {
+    background: url("../../assets/img/svg/facebook-ico-light.svg") no-repeat;
+  }
+}
+
+.footer-right {
+  padding-top: 32px;
+  @media (max-width: 768px) {
+    padding-top: 32px;
+  }
+  @media (max-width: 650px) {
+    padding-top: 38px;
+  }
+}
+
+.footer-text {
+  color: $text-light;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.footer-contacts {
+  padding-top: 40px;
+}
+
+.footer-contact {
+  color: $text-light;
+  list-style-type: none;
+  padding-bottom: 21px;
+  display: flex;
+  align-items: center;
+  a {
+    color: $text-light;
+  }
+  @media (max-width: 768px) {
+    padding-bottom: 20px;
+  }
+}
+
+.footer-contact-underline {
+  position: relative;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    cursor: default;
+  }
+}
+
+.footer-contact-underline::after {
+  content: "";
+  position: absolute;
+  left: 35%;
+  bottom: 10px;
+  width: 0;
+  height: 2px;
+  transition: all 1s;
+}
+
+@media (hover: hover) {
+  .footer-contact-underline:hover::after {
+    left: 0;
+    width: 70%;
+    background-color: $text-light;
+  }
+}
+
+.location-contact-ico {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/img/svg/location-ico.svg");
+  margin-right: 8px;
+}
+
+.phone-contact-ico {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/img/svg/phone-ico.svg");
+  margin-right: 8px;
+}
+
+.time-contact-ico {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../../assets/img/svg/time-ico.svg");
+  margin-right: 8px;
+}
+
+.footer-link {
+  display: flex;
+  gap: 1px;
+  @media (max-width: 768px) {
+    cursor: default;
+  }
+}

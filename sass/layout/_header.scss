@@ -1,0 +1,136 @@
+.header {
+  margin: 20px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.logo-link {
+  display: inline-block;
+  width: 100%;
+  height: 60px;
+  cursor: pointer;
+}
+
+.logo-burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.nav {
+  flex-grow: 1;
+  @media (max-width: 768px) {
+    // display: none;
+    align-self: center;
+    flex-grow: 0;
+  }
+}
+
+.nav-wrapper {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.nav-item {
+  @extend %txt-link-button;
+  margin: 0 15px 5px 27px;
+  @media (max-width: 800px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 60px;
+  }
+}
+
+.menu::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  transition: all 1s;
+}
+
+@media (hover: hover) {
+  .menu:hover::after {
+    width: 100%;
+    left: 0%;
+    background-color: $text-dark;
+  }
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  @extend %txt-link-button;
+
+  @media (max-width: 768px) {
+    align-self: center;
+    font-size: 32px;
+    margin-top: 99px;
+  }
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  transition: all 1s;
+}
+
+@media (hover: hover) {
+  .nav-item:hover::after {
+    left: 0;
+    width: 100%;
+    background-color: $text-dark;
+  }
+}
+
+.menu-logo {
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/img/svg/coffee-cup.svg");
+  margin-left: 8px;
+  @media (max-width: 768px) {
+    background-image: url("../assets/img/svg/coffee-cup-big.svg");
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+  }
+}
+
+.hidden {
+  overflow-y: hidden;
+}
+
+@media (hover: hover) {
+  .hidden {
+    overflow-y: hidden;
+  }
+}
